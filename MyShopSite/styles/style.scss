@@ -1,0 +1,757 @@
+@import 'vars';
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+@keyframes animating-buttons {
+    from {
+        border: 1px solid $colorHighlight;
+        background: rgb(255, 255, 255);
+        color: $colorHighlight;
+    }
+
+    to {
+        background: $colorHighlight;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes animating-contact_links {
+    from {
+        background: rgb(255, 255, 255);
+        fill: rgb(0, 0, 0);
+    }
+
+    to {
+        background: $colorHighlight;
+        fill: rgb(255, 255, 255);
+    }
+}
+
+@keyframes animating-links {
+    from {
+        color: rgb(0, 0, 0);
+    }
+
+    to {
+        color: $colorHighlight;
+    }
+}
+
+@keyframes animating-block {
+    from {
+        background: rgba(58, 56, 56, 0);
+        width: 0%;
+        height: 0px;
+    }
+
+    to {
+        background: rgba(58, 56, 56, 0.86);
+        width: 100%;
+        height: 420px;
+    }
+}
+
+.conteiner {
+    padding-left: calc(50% - $widthConteiner / 2);
+    padding-right: calc(50% - $widthConteiner / 2);
+}
+
+.max_conteiner {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.header-navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(34, 34, 34);
+    min-height: 75px;
+
+    &__left {
+        display: flex;
+        align-items: flex-end;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        gap: 33px;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        background: rgb(34, 34, 34);
+    }
+
+    &__cart {
+        position: relative;
+    }
+
+    &__cart_sales {
+        display: none;
+        @include centerFlex();
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: $colorHighlight;
+        width: 19px;
+        height: 19px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+.main-content-top {
+    display: flex;
+    align-items: center;
+    background: rgb(241, 228, 230);
+    gap: 64px;
+    position: relative;
+
+    &__title {
+        margin-top: 290px;
+        margin-bottom: 381px;
+        border-left: 12px solid $colorHighlight;
+        padding-left: 16px;
+        color: rgb(34, 34, 34);
+
+        h2 {
+            font-weight: 900;
+            font-size: 48px;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .red_title {
+            color: $colorHighlight;
+        }
+    }
+}
+
+.burgerMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 232px;
+    height: 634px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    z-index: 5;
+
+    &__exit {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border: none;
+    }
+
+    h3 {
+        padding-top: 32px;
+        padding-left: 33px;
+        padding-bottom: 24px;
+    }
+
+    &__card {
+        @include columnFlex();
+        gap: 20px;
+    }
+
+    &__chapter {
+        color: $colorHighlight;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-left: 32px;
+    }
+
+    &__chapter_items {
+        @include columnFlex();
+        gap: 11px;
+        padding-top: 12px;
+
+        a {
+            color: rgb(111, 110, 110);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            padding-left: 53px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.for-sale {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 65px;
+    padding-bottom: 96px;
+
+    &__card {
+        position: relative;
+    }
+
+    &__card_accesories {
+        grid-column: 1 / -1;
+        position: relative;
+    }
+
+    &__backGround {
+        @include centerFlex();
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 22, 22, 0.7);
+
+        h4 {
+            font-weight: 400;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 24px;
+            color: $colorHighlight;
+        }
+    }
+}
+
+.products__title {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 48px;
+
+    h3 {
+        font-size: 30px;
+        line-height: 36px;
+        color: rgb(34, 34, 34);
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 17px;
+        color: rgb(159, 159, 159);
+    }
+}
+
+.products__table {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+    background: rgb(248, 248, 248);
+    position: relative;
+
+    &__cart {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 420px;
+        background: rgba(58, 56, 56, 0.86);
+    }
+
+    &__btn {
+        @include centerFlex();
+        gap: 11px;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255);
+        background: none;
+        width: 139px;
+        height: 43px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+
+        img {
+            width: 26px;
+            height: 24px;
+        }
+    }
+
+    &__link {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        color: rgb(0, 0, 0);
+
+    }
+
+    &__link:hover {
+        color: $colorHighlight;
+        animation: animating-links .3s;
+    }
+
+    &__text {
+        padding: 24px 20px 20px 20px;
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            color: rgb(93, 93, 93);
+            padding-top: 13px;
+            padding-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: $colorHighlight;
+        }
+    }
+
+    &:hover {
+        .product-card__cart {
+            display: block;
+            @include centerFlex();
+            animation: animating-block .3s;
+        }
+    }
+}
+
+.browse-all {
+    @include centerFlex();
+    margin-top: 48px;
+    margin-bottom: 95px;
+
+    &_btn {
+        padding: 15px 39px;
+        border: 1px solid $colorHighlight;
+        background: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $colorHighlight;
+        cursor: pointer;
+
+        &:hover {
+            background: $colorHighlight;
+            color: rgb(255, 255, 255);
+            animation: animating-buttons .3s;
+        }
+    }
+}
+
+.feature {
+    @include centerFlex();
+    gap: 30px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    background-color: rgb(34, 34, 36);
+    color: rgb(251, 251, 251);
+
+    &__card {
+        @include centerFlex();
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__card img {
+        padding-bottom: 25px;
+    }
+
+    &__text h4 {
+        font-size: 19.96px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 16px;
+    }
+
+    &__text p {
+        font-size: 13.97px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+}
+
+.subscrube {
+    position: relative;
+}
+
+.subscribe_layer {
+    position: absolute;
+    background: rgba(244, 244, 244, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.subscribe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    max-width: 1140px;
+
+    &__left {
+        @include centerFlex();
+        flex-direction: column;
+        gap: 28px;
+        color: rgb(34, 34, 36);
+        font-style: italic;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        max-width: 360px;
+    }
+
+    &__right {
+        @include columnFlex();
+        color: rgb(34, 34, 36);
+        text-align: center;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 167.2%;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 167.2%;
+            padding-bottom: 32px;
+        }
+    }
+}
+
+.subscribe-form {
+    @include centerFlex();
+    font-weight: 400;
+
+    &_input {
+        border: none;
+        border-radius: 25px 0 0 25px;
+        width: 190px;
+        height: 48px;
+        background: rgb(225, 225, 225);
+        color: rgb(34, 34, 36);
+        padding-left: 22px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &_btn {
+        cursor: pointer;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        width: 100px;
+        height: 48px;
+        background: $colorHighlight;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    background: rgb(34, 34, 36);
+
+    h5 {
+        color: rgb(251, 251, 251);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+    }
+
+    &_contacts {
+        display: flex;
+        gap: 8px;
+
+        button {
+            width: 32px;
+            height: 32px;
+            border: none;
+            cursor: pointer;
+            background: rgb(255, 255, 255);
+
+            &:hover {
+                background: $colorHighlight;
+                animation: animating-contact_links .3s;
+
+                svg {
+                    fill: rgb(255, 255, 255);
+                    animation: animating-contact_links .3s;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .conteiner {
+        padding-left: calc(50% - 367px);
+        padding-right: calc(50% - 367px);
+    }
+
+    .header-navi__right {
+        gap: 32px;
+    }
+
+    .main-content-top {
+        max-height: 368px;
+        gap: 40px;
+
+        img {
+            max-height: 368px;
+        }
+
+        &__title {
+            margin-top: 138px;
+            margin-bottom: 152px;
+
+            h2 {
+                font-size: 44px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .for-sale {
+        gap: 19px;
+        padding-bottom: 155px;
+    }
+
+    .products__title {
+        padding-bottom: 72px;
+    }
+
+    .products__table {
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card__text {
+        padding: 25px 17px 20px 17px;
+    }
+
+    .browse-all {
+        margin-top: 32px;
+        margin-bottom: 64px;
+    }
+
+    .feature {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+
+        &__card {
+            max-width: 360px;
+
+            img {
+                padding-bottom: 28px;
+            }
+        }
+    }
+
+
+    .subscrube {
+        height: 693px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .subscribe-content {
+        align-items: center;
+        padding-top: 90px;
+        flex-direction: column;
+        gap: 80px;
+
+        &__right {
+            @include columnFlex();
+            color: rgb(34, 34, 36);
+            text-align: center;
+
+            h4 {
+                padding-bottom: 27px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .conteiner {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .main-content-top {
+        justify-content: center;
+        max-height: 363px;
+        padding-top: 148px;
+        padding-bottom: 149px;
+
+        &__title {
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &__hide {
+            display: none;
+        }
+
+        h2 {
+            font-size: 38px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .for-sale {
+        @include columnFlex();
+        gap: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        &__card_accesories {
+            min-height: 111px;
+
+            img {
+                height: 111px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .products__title {
+        padding-bottom: 64px;
+    }
+
+    .products__table {
+        @include columnFlex();
+        gap: 16px;
+    }
+
+    .product-card__text {
+        padding: 25px 22px 20px 22px;
+    }
+
+    .browse_all {
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
+
+    .feature {
+        flex-direction: column;
+        gap: 46px;
+        padding-top: 48px;
+        padding-bottom: 81px;
+
+        &__card {
+            max-width: 348px;
+
+            img {
+                padding-bottom: 27px;
+            }
+
+            h4 {
+                padding-bottom: 14.65px;
+            }
+        }
+    }
+
+    .subscrube {
+        height: 550px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .subscribe-content {
+        align-items: center;
+        padding-top: 64px;
+        flex-direction: column;
+        gap: 59px;
+
+        &__left {
+            font-size: 18px;
+        }
+
+        &__right {
+            @include columnFlex();
+            color: rgb(34, 34, 36);
+            text-align: center;
+
+            h4 {
+                font-size: 14px;
+                padding-bottom: 22px;
+            }
+        }
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 43px;
+        padding-bottom: 9px;
+
+        &_contacts {
+            gap: 7.29px;
+        }
+    }
+}

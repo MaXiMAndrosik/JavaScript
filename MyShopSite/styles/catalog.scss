@@ -1,0 +1,327 @@
+@import 'vars';
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(248, 243, 244);
+    height: 148px;
+    position: relative;
+
+    &__header {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $colorHighlight;
+    }
+
+    &__menu {
+        display: flex;
+
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        color: rgb(99, 99, 99);
+
+        &:not(:last-child)::after {
+            content: '/';
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        &:last-child {
+            color: $colorHighlight;
+            font-weight: 700;
+        }
+
+        &:hover {
+            color: $colorHighlight;
+            animation: animating-links .3s;
+        }
+    }
+}
+
+.catalog-nav {
+    height: 132px;
+
+    &__conteiner {
+        position: relative;
+    }
+
+    &__filter {
+        position: absolute;
+        top: 39px;
+
+    }
+
+    &__choice {
+        position: absolute;
+        left: 390px;
+        top: 51px;
+        z-index: 5;
+        display: flex;
+        gap: 28px;
+    }
+}
+
+.filter-box {
+    position: relative;
+    box-sizing: border-box;
+    padding: 13px 16px 16px 16px;
+    width: 360px;
+    z-index: 5;
+
+    &[open] {
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        background: rgb(255, 255, 255);
+    }
+
+    &__box {
+        padding-top: 16px;
+        @include columnFlex();
+        gap: 18px;
+    }
+
+    &__details {
+        &[open] .filter-box__item {
+            color: $colorHighlight;
+        }
+    }
+
+    &__summary {
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        &:hover {
+            color: $colorHighlight;
+            animation: animating-summary .3s;
+
+            svg path {
+                fill: $colorHighlight;
+                animation: animating-summary .3s;
+            }
+        }
+    }
+
+    &[open] .filter-box__header {
+        color: $colorHighlight;
+    }
+
+    &[open] .filter-box__summary {
+        svg path {
+            fill: $colorHighlight;
+        }
+    }
+
+    &__item {
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-left: 5px solid $colorHighlight;
+        border-bottom: 1px solid rgb(235, 235, 235);
+        padding: 8px 0 11px 11px;
+        cursor: pointer;
+
+        &:hover {
+            color: $colorHighlight;
+            animation: animating-summary .3s;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        color: rgb(111, 110, 110);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        @include columnFlex();
+        gap: 11px;
+        padding: 24px 24px 24px 36px;
+        cursor: pointer;
+
+        li:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.choice-box {
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: rgb(111, 110, 110);
+    }
+
+    &__item:hover {
+        color: $colorHighlight;
+        animation: animating-summary .3s;
+
+        svg path {
+            fill: $colorHighlight;
+            animation: animating-summary .3s;
+        }
+    }
+
+    &__box {
+        color: rgb(111, 110, 110);
+        width: 79px;
+        height: 103px;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        background: rgb(255, 255, 255);
+        padding-left: 9px;
+        @include columnFlex();
+        justify-content: space-evenly;
+        position: absolute;
+        top: 22px;
+
+        &_item {
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            line-height: 16px;
+        }
+
+        &_item:hover {
+            color: $colorHighlight;
+            animation: animating-summary .3s;
+        }
+    }
+}
+
+.catalog-pages {
+    padding-top: 48px;
+    padding-bottom: 96px;
+    @include centerFlex();
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: rgb(196, 196, 196);
+
+    &__box {
+        border: 1px solid rgb(235, 235, 235);
+        width: 282.91px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__arrow {
+        &:hover {
+            svg path {
+                fill: $colorHighlight;
+            }
+        }
+    }
+
+    &__link {
+        color: rgb(196, 196, 196);
+
+        &:nth-child(2) {
+            color: $colorHighlight;
+        }
+
+        &:hover {
+            color: $colorHighlight;
+            animation: animating-links .3s;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hiden {
+        display: none;
+    }
+
+    .catalog-nav {
+        height: 81px;
+
+        &__filter {
+            top: 11px;
+        }
+
+        &__choice {
+            top: 24px;
+            left: 440px;
+        }
+    }
+
+    .catalog-pages {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    .main-top {
+        justify-content: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hiden {
+        display: none;
+    }
+
+    .catalog-nav {
+        height: 81px;
+
+        &__filter {
+            top: 11px;
+        }
+
+        &__choice {
+            top: 26px;
+            left: 80px;
+            gap: 24px;
+        }
+    }
+
+    .filter-box {
+        &[open] {
+            position: relative;
+            z-index: 10;
+        }
+
+        &__header {
+            display: none;
+        }
+    }
+
+
+    .choice-box {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .catalog-pages {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+}

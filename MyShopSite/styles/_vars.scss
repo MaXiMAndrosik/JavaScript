@@ -1,0 +1,60 @@
+$widthSite: 1600px;
+$widthConteiner: 1140px;
+$colorHighlight: rgb(241, 109, 127);
+
+@mixin centerFlex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin columnFlex() {
+    display: flex;
+    flex-direction: column;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary+* {
+    animation: slide .3s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animating-summary {
+    from {
+        color: rgb(111, 110, 110);
+        fill: rgb(111, 110, 110);
+    }
+
+    to {
+        color: $colorHighlight;
+        fill: $colorHighlight;
+    }
+}
+
+@keyframes animating-links {
+    from {
+        color: rgb(196, 196, 196);
+    }
+
+    to {
+        color: $colorHighlight;
+    }
+}

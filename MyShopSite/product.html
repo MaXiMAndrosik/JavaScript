@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./styles/myreset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/product.css">
+</head>
+
+<body>
+    <h1 style="display: none;">Product</h1>
+    <header class="max_conteiner">
+        <nav class="header-navi conteiner">
+            <h2 style="display: none;">Header navigation</h2>
+            <div class="header-navi__left">
+                <a href="./index.html"><img src="./img/Logo.svg" alt="Logo"></a>
+                <button><img src="./img/find.svg" alt="Find"></button>
+            </div>
+
+            <div class="header-navi__right">
+                <button class="menu" aria-label="menu"><img src="./img/burger.svg" alt="burger_menu"></button>
+                <form action="./registration.html">
+                    <button class="hide" aria-label="login"><img src="./img/login.svg" alt=""></button>
+                </form>
+                <form action="./cart.html">
+                    <button class="header-navi__cart hide" aria-label="cart">
+                        <img src="./img/basket.svg" alt="">
+                        <span class="header-navi__cart_sales">5</span>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max_conteiner">
+        <h1 style="display: none;">Product main</h1>
+
+        <section class="main-top conteiner">
+            <h2 class="main-top__header">NEW ARRIVALS </h2>
+            <div class="main-top__menu">
+                <a href="./index.html" class="main-top__link">HOME</a>
+                <a href="#" class="main-top__link">MEN</a>
+                <a href="#" class="main-top__link">NEW ARRIVALS </a>
+            </div>
+            <div class="burgerMenu hidden">
+                <button class="burgerMenu__exit"><svg viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: black;
+                                    stroke: #000;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g id="cross">
+                            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                        </g>
+                    </svg>
+                </button>
+                <h3>MENU</h3>
+                <div class="burgerMenu__card">
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">MAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">T-Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">WOMAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">BJackets & Coatsags</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">KIDS</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="product">
+            <h2 style="display: none;">Product image</h2>
+            <div class="product-box">
+                <form action="./product.html">
+                    <button class="product-box__btn">
+                        <svg width="30" height="30" fill="none">
+                            <defs>
+                                <clipPath>
+                                    <rect rx="0" width="30" height="30" transform="translate(.5 .5)" fill="#fff"
+                                        fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect rx="0" width="30" height="30" transform="translate(.5 .5)" fill="none" />
+                            <g clip-path="url(#a)">
+                                <path d="m21.69 7.75-7.75 7.75 7.75 7.75-1.55 3.09L9.29 15.5 20.14 4.64l1.55 3.11z"
+                                    fill="#000" />
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+                <img class="product-box__image" src="./img/product-7.jpeg" alt="product">
+                <form action="./product.html">
+                    <button class="product-box__btn">
+                        <svg width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath>
+                                    <rect rx="0" width="30" height="30" transform="translate(.5 .5)" fill="#fff"
+                                        fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect rx="0" width="30" height="30" transform="translate(.5 .5)" fill="none" />
+                            <g clip-path="url(#a)">
+                                <path d="m9.29 23.25 7.75-7.75-7.75-7.75 1.55-3.11L21.69 15.5 10.84 26.34l-1.55-3.09z"
+                                    fill="#000" />
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="product-content conteiner">
+                <div class="product-content__box">
+                    <h2 class="product-content__box__chapter">WOMEN COLLECTION</h2>
+                    <div class="product-content__box__line"></div>
+                    <h3 class="product-content__box__name">MOSCHINO CHEAP AND CHIC</h3>
+                    <p class="product-content__box__text">Compellingly actualize fully researched processes before
+                        proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                        services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                    <h4 class="product-content__box__price">$561</h4>
+                </div>
+
+                <div class="product-content__choice">
+                    <details class="choice-box">
+                        <summary class="choice-box__item summary_autoclose">CHOOSE COLOR
+                            <svg width="10.020020" height="5.046143" viewBox="0 0 10.02 5.04614" fill="none">
+                                <path
+                                    d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
+                                    fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                        </summary>
+                    </details>
+
+                    <details class="choice-box">
+                        <summary class="choice-box__item summary_autoclose">CHOOSE SIZE
+                            <svg width="10.020020" height="5.046143" viewBox="0 0 10.02 5.04614" fill="none">
+                                <path
+                                    d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
+                                    fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                        </summary>
+                        <div class="choice-box__box">
+                            <label class="choice-box__box_item" id="checkbox1"><input type="checkbox"
+                                    name="checkbox1">XS</label>
+                            <label class="choice-box__box_item" id="checkbox2"><input type="checkbox"
+                                    name="checkbox2">S</label>
+                            <label class="choice-box__box_item" id="checkbox3"><input type="checkbox"
+                                    name="checkbox3">M</label>
+                            <label class="choice-box__box_item" id="checkbox4"><input type="checkbox"
+                                    name="checkbox4">L</label>
+                        </div>
+                    </details>
+
+                    <details class="choice-box">
+                        <summary class="choice-box__item summary_autoclose">QUANTITY
+                            <svg width="10.020020" height="5.046143" viewBox="0 0 10.02 5.04614" fill="none">
+                                <path
+                                    d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
+                                    fill="#6F6E6E" fill-opacity="1.000000" fill-rule="nonzero" />
+                            </svg>
+                        </summary>
+                    </details>
+
+                </div>
+
+                <form class="product-content__btn" action="#">
+                    <button class="product-content__btn_btn addToCart">
+                        <svg width="31.996" height="29" fill="none">
+                            <path
+                                d="M26.2 29c-.65-.03-1.26-.31-1.71-.78-.44-.47-.68-1.1-.67-1.75.01-.65.28-1.27.74-1.72a2.52 2.52 0 0 1 1.74-.71c.64 0 1.27.26 1.73.71.46.45.73 1.07.74 1.72.02.65-.23 1.28-.67 1.75-.44.47-1.06.75-1.7.78h-.2zM6.75 26.31c0-.53.16-1.04.45-1.48.29-.44.71-.79 1.2-.99.49-.2 1.03-.26 1.55-.15.52.1 1 .36 1.37.73.38.37.63.85.74 1.37.1.52.05 1.06-.16 1.55-.2.49-.54.91-.98 1.2a2.647 2.647 0 0 1-2.52.25 2.654 2.654 0 0 1-1.45-1.45c-.13-.32-.2-.67-.2-1.03zm3.8-5.63a1.197 1.197 0 0 1-1.15-.87L4.57 2.36H1.18c-.32 0-.62-.13-.84-.35C.12 1.79 0 1.49 0 1.18 0 .86.12.56.34.34.56.12.86 0 1.18 0h4.28c.26-.01.51.08.72.24.2.15.35.37.42.62l4.83 17.46h13.18L29 8.27H14.4c-.16 0-.32-.02-.47-.08-.14-.06-.28-.14-.39-.25a1.142 1.142 0 0 1-.36-.85c0-.16.03-.32.09-.46.06-.15.15-.28.27-.39.11-.11.25-.2.39-.26.15-.05.31-.08.47-.07h16.41c.19-.01.39.04.56.14.17.09.32.22.42.39.11.16.18.35.2.55.01.19-.02.39-.09.57l-5.41 12.41c-.09.21-.24.39-.44.52-.19.12-.41.19-.64.19H10.55z"
+                                fill="rgb(241, 109, 127)" />
+                        </svg>Add to Cart</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="products conteiner">
+            <h2 style="display: none;">Catalog</h2>
+            <div class="products__table"></div>
+
+        </section>
+
+        <section class="subscrube">
+            <h2 style="display: none;">Subscrube</h2>
+            <img src="./img/subscribeLayer.webp" alt="Layer">
+            <div class="subscribe_layer">
+                <div class="subscribe-content conteiner">
+                    <div class="subscribe-content__left">
+                        <img src="./img/subscribefoto.png" alt="foto">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+
+                    <div class="subscribe-content__right">
+                        <h3>SUBSCRIBE</h3>
+                        <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <form class="subscribe-form">
+                            <input type="email" class="subscribe-form_input" placeholder="Enter Your Email" required="">
+                            <button class="subscribe-form_btn">Subscribe</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max_conteiner">
+        <h2 style="display: none;">Footer</h2>
+        <div class="footer conteiner">
+            <div>
+                <h5>© 2022 Brand All Rights Reserved.</h5>
+            </div>
+            <div class="footer_contacts">
+                <button aria-label="facebook">
+                    <svg width="8" height="16" viewBox="0 0 8 15" fill="#000000">
+                        <path
+                            d="M8.3 8.28L8.73 5.61L6.06 5.61L6.06 3.88C6.06 3.15 6.44 2.44 7.63 2.44L8.84 2.44L8.84 0.17C8.84 0.17 7.74 0 6.69 0C4.5 0 3.06 1.27 3.06 3.58L3.06 5.61L0.63 5.61L0.63 8.28L3.06 8.28L3.06 14.72L6.06 14.72L6.06 8.28L8.3 8.28Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="instagram">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="#000000">
+                        <path
+                            d="M7.58 4.68C5.43 4.68 3.69 6.38 3.69 8.49C3.69 10.6 5.43 12.31 7.58 12.31C9.73 12.31 11.47 10.6 11.47 8.49C11.47 6.38 9.73 4.68 7.58 4.68ZM7.58 10.97C6.19 10.97 5.05 9.86 5.05 8.49C5.05 7.12 6.18 6.01 7.58 6.01C8.97 6.01 10.11 7.12 10.11 8.49C10.11 9.86 8.97 10.97 7.58 10.97ZM12.53 4.52C12.53 5.02 12.13 5.41 11.63 5.41C11.12 5.41 10.72 5.01 10.72 4.52C10.72 4.03 11.12 3.63 11.63 3.63C12.13 3.63 12.53 4.03 12.53 4.52ZM15.11 5.42C15.05 4.23 14.77 3.18 13.88 2.31C13 1.44 11.92 1.16 10.7 1.1C9.45 1.03 5.7 1.03 4.45 1.1C3.24 1.16 2.16 1.43 1.27 2.3C0.38 3.17 0.11 4.23 0.05 5.42C-0.03 6.65 -0.03 10.33 0.05 11.56C0.1 12.75 0.38 13.81 1.27 14.68C2.16 15.55 3.23 15.82 4.45 15.88C5.7 15.95 9.45 15.95 10.7 15.88C11.92 15.82 13 15.55 13.88 14.68C14.77 13.81 15.05 12.75 15.11 11.56C15.18 10.33 15.18 6.65 15.11 5.42ZM13.49 12.88C13.23 13.53 12.71 14.03 12.05 14.29C11.05 14.68 8.68 14.59 7.58 14.59C6.48 14.59 4.1 14.68 3.11 14.29C2.44 14.03 1.93 13.53 1.67 12.88C1.27 11.9 1.36 9.57 1.36 8.49C1.36 7.41 1.27 5.08 1.67 4.11C1.93 3.45 2.44 2.95 3.11 2.69C4.11 2.3 6.48 2.39 7.58 2.39C8.68 2.39 11.05 2.31 12.05 2.69C12.71 2.95 13.22 3.45 13.49 4.11C13.89 5.09 13.79 7.41 13.79 8.49C13.79 9.57 13.89 11.9 13.49 12.88Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="printerest">
+                    <svg width="12" height="16" viewBox="0 0 12 16" fill="#000000">
+                        <path
+                            d="M6.44 0.2C3.2 0.2 0 2.34 0 5.79C0 8 1.25 9.25 2 9.25C2.32 9.25 2.5 8.38 2.5 8.14C2.5 7.85 1.75 7.23 1.75 6.02C1.75 3.51 3.68 1.73 6.18 1.73C8.33 1.73 9.92 2.94 9.92 5.16C9.92 6.82 9.25 9.93 7.07 9.93C6.29 9.93 5.61 9.37 5.61 8.56C5.61 7.38 6.45 6.24 6.45 5.02C6.45 2.95 3.48 3.32 3.48 5.82C3.48 6.35 3.55 6.93 3.78 7.41C3.35 9.26 2.46 12.03 2.46 13.94C2.46 14.53 2.54 15.11 2.6 15.7C2.71 15.82 2.65 15.81 2.82 15.75C4.41 13.6 4.35 13.17 5.07 10.35C5.46 11.08 6.47 11.48 7.26 11.48C10.62 11.48 12.12 8.24 12.12 5.33C12.12 2.22 9.41 0.2 6.44 0.2Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="twiter">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#000000">
+                        <path
+                            d="M14.5 4.74C14.51 4.88 14.51 5.02 14.51 5.16C14.51 9.5 11.18 14.49 5.08 14.49C3.21 14.49 1.46 13.95 0 13.02C0.26 13.05 0.52 13.06 0.8 13.06C2.34 13.06 3.77 12.54 4.91 11.66C3.45 11.63 2.23 10.69 1.81 9.39C2.02 9.42 2.22 9.44 2.44 9.44C2.73 9.44 3.03 9.4 3.31 9.32C1.79 9.02 0.65 7.7 0.65 6.11L0.65 6.07C1.09 6.31 1.61 6.46 2.15 6.48C1.26 5.89 0.67 4.89 0.67 3.75C0.67 3.14 0.84 2.58 1.12 2.1C2.76 4.09 5.21 5.39 7.96 5.53C7.91 5.28 7.87 5.03 7.87 4.78C7.87 2.97 9.35 1.5 11.19 1.5C12.14 1.5 13 1.89 13.61 2.53C14.36 2.39 15.08 2.12 15.71 1.74C15.47 2.5 14.94 3.14 14.26 3.55C14.92 3.48 15.57 3.29 16.16 3.04C15.71 3.69 15.15 4.27 14.5 4.74Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script/script.js"></script>
+
+</body>
+
+</html>

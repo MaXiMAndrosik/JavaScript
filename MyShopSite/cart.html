@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./styles/myreset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+</head>
+
+<body>
+    <h2 style="display: none;">Cart</h2>
+    <header class="max_conteiner">
+        <nav class="header-navi conteiner">
+            <h2 style="display: none;">Header navigation</h2>
+            <div class="header-navi__left">
+                <a href="./index.html"><img src="./img/Logo.svg" alt="Logo"></a>
+                <button><img src="./img/find.svg" alt="Find"></button>
+            </div>
+
+            <div class="header-navi__right">
+                <button class="menu" aria-label="menu"><img src="./img/burger.svg" alt="burger_menu"></button>
+                <form action="./registration.html">
+                    <button class="hide" aria-label="login"><img src="./img/login.svg" alt=""></button>
+                </form>
+                <button class="header-navi__cart hide" aria-label="cart">
+                    <img src="./img/basket.svg" alt="">
+                    <span class="header-navi__cart_sales">5</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max_conteiner">
+
+        <section class="main-top conteiner">
+            <h2 class="main-top__header">SHOPPING CART</h2>
+
+            <div class="burgerMenu hidden">
+                <button class="burgerMenu__exit"><svg viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: black;
+                                    stroke: #000;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g id="cross">
+                            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                        </g>
+                    </svg>
+                </button>
+                <h3>MENU</h3>
+                <div class="burgerMenu__card">
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">MAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">T-Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">WOMAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">BJackets & Coatsags</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">KIDS</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cart-products conteiner">
+
+            <div class="cart-products__leftPart">
+
+                <div class="cart-products__productCards">
+
+                    <div class="product-box">
+                        <img class="product-box__image" src="./img/product-3-cart.jpeg" alt="product">
+
+                        <div class="product-box__content">
+                            <a href="./product.html" class="product-box__content_link">MANGO PEOPLE T-SHIRT</a>
+                            <div class="product-box__discription">
+                                <p class="product-box__discription__item">Price: <span
+                                        class="product-box__discription__item_selectRed">$300</span></p>
+                                <p class="product-box__discription__item">Color: <span
+                                        class="product-box__discription__item_select">Red</span></p>
+                                <p class="product-box__discription__item">Size: <span
+                                        class="product-box__discription__item_select">XL</span></p>
+                                <p class="product-box__discription__item">Quantity:
+                                    <input class="product-box__discription__item_input" type="number" value="2" min="1">
+                                </p>
+                            </div>
+
+                            <form action="#">
+                                <label class="product-box__content_cancel del_product">
+                                    <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none">
+                                        <defs />
+                                        <path
+                                            d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
+                                            fill="#575757" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </label>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <img class="product-box__image" src="./img/product-8-cart.jpeg" alt="product">
+
+                        <div class="product-box__content">
+                            <a href="./product.html" class="product-box__content_link">MANGO PEOPLE T-SHIRT</a>
+                            <div class="product-box__discription">
+                                <p class="product-box__discription__item">Price: <span
+                                        class="product-box__discription__item_selectRed">$300</span></p>
+                                <p class="product-box__discription__item">Color: <span
+                                        class="product-box__discription__item_select">Red</span></p>
+                                <p class="product-box__discription__item">Size: <span
+                                        class="product-box__discription__item_select">XL</span></p>
+                                <p class="product-box__discription__item">Quantity:
+                                    <input class="product-box__discription__item_input" type="number" value="2" min="1">
+                                </p>
+                            </div>
+
+                            <form action="#">
+                                <label class="product-box__content_cancel del_product">
+                                    <svg width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none">
+                                        <defs />
+                                        <path
+                                            d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
+                                            fill="#575757" fill-opacity="1.000000" fill-rule="nonzero" />
+                                    </svg>
+                                </label>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart-products__buttons">
+                    <form action="./index.html">
+                        <button class="cart-products__buttons_btn clear_cart">CLEAR SHOPPING CART</button>
+                    </form>
+                    <form action="./catalog.html">
+                        <button class="cart-products__buttons_btn">CONTINUE SHOPPING</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="cart-products__rightPart">
+
+                <div class="shipping-adress">
+                    <h3 class="shipping-adress__title">SHIPPING ADRESS</h3>
+                    <form class="shipping-adress__content" action="#">
+                        <input type="text" class="shipping-adress__input" placeholder="Bangladesh">
+                        <input type="text" class="shipping-adress__input" placeholder="State">
+                        <input type="text" class="shipping-adress__input" placeholder="Postcode / Zip">
+                        <button class="shipping-adress__btn">GET A QUOTE</button>
+                    </form>
+                </div>
+
+
+                <div class="shipping-total">
+                    <div class="shipping-total__line">
+                        <p class="shipping-total__sub">SUB TOTAL<span class="shipping-total__sub_select">$900</span>
+                        </p>
+                        <p class="shipping-total__grand">GRAND TOTAL<span
+                                class="shipping-total__grand_select">$900</span></p>
+                    </div>
+                    <form action="#">
+                        <button class="shipping-total__btn">PROCEED TO CHECKOUT</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="subscrube">
+            <h2 style="display: none;">Subscrube</h2>
+            <img src="./img/subscribeLayer.webp" alt="Layer">
+            <div class="subscribe_layer">
+                <div class="subscribe-content conteiner">
+                    <div class="subscribe-content__left">
+                        <img src="./img/subscribefoto.png" alt="foto">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+
+                    <div class="subscribe-content__right">
+                        <h3>SUBSCRIBE</h3>
+                        <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <form class="subscribe-form">
+                            <input type="email" class="subscribe-form_input" placeholder="Enter Your Email" required="">
+                            <button class="subscribe-form_btn">Subscribe</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max_conteiner">
+        <h1 style="display: none;">© 2022 Brand All Rights Reserved</h1>
+        <div class="footer conteiner">
+            <div>
+                <h5>© 2022 Brand All Rights Reserved.</h5>
+            </div>
+            <div class="footer_contacts">
+                <button aria-label="facebook">
+                    <svg width="8" height="16" viewBox="0 0 8 15" fill="#000000">
+                        <path
+                            d="M8.3 8.28L8.73 5.61L6.06 5.61L6.06 3.88C6.06 3.15 6.44 2.44 7.63 2.44L8.84 2.44L8.84 0.17C8.84 0.17 7.74 0 6.69 0C4.5 0 3.06 1.27 3.06 3.58L3.06 5.61L0.63 5.61L0.63 8.28L3.06 8.28L3.06 14.72L6.06 14.72L6.06 8.28L8.3 8.28Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="instagram">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="#000000">
+                        <path id="Vector"
+                            d="M7.58 4.68C5.43 4.68 3.69 6.38 3.69 8.49C3.69 10.6 5.43 12.31 7.58 12.31C9.73 12.31 11.47 10.6 11.47 8.49C11.47 6.38 9.73 4.68 7.58 4.68ZM7.58 10.97C6.19 10.97 5.05 9.86 5.05 8.49C5.05 7.12 6.18 6.01 7.58 6.01C8.97 6.01 10.11 7.12 10.11 8.49C10.11 9.86 8.97 10.97 7.58 10.97ZM12.53 4.52C12.53 5.02 12.13 5.41 11.63 5.41C11.12 5.41 10.72 5.01 10.72 4.52C10.72 4.03 11.12 3.63 11.63 3.63C12.13 3.63 12.53 4.03 12.53 4.52ZM15.11 5.42C15.05 4.23 14.77 3.18 13.88 2.31C13 1.44 11.92 1.16 10.7 1.1C9.45 1.03 5.7 1.03 4.45 1.1C3.24 1.16 2.16 1.43 1.27 2.3C0.38 3.17 0.11 4.23 0.05 5.42C-0.03 6.65 -0.03 10.33 0.05 11.56C0.1 12.75 0.38 13.81 1.27 14.68C2.16 15.55 3.23 15.82 4.45 15.88C5.7 15.95 9.45 15.95 10.7 15.88C11.92 15.82 13 15.55 13.88 14.68C14.77 13.81 15.05 12.75 15.11 11.56C15.18 10.33 15.18 6.65 15.11 5.42ZM13.49 12.88C13.23 13.53 12.71 14.03 12.05 14.29C11.05 14.68 8.68 14.59 7.58 14.59C6.48 14.59 4.1 14.68 3.11 14.29C2.44 14.03 1.93 13.53 1.67 12.88C1.27 11.9 1.36 9.57 1.36 8.49C1.36 7.41 1.27 5.08 1.67 4.11C1.93 3.45 2.44 2.95 3.11 2.69C4.11 2.3 6.48 2.39 7.58 2.39C8.68 2.39 11.05 2.31 12.05 2.69C12.71 2.95 13.22 3.45 13.49 4.11C13.89 5.09 13.79 7.41 13.79 8.49C13.79 9.57 13.89 11.9 13.49 12.88Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="printerest">
+                    <svg width="12" height="16" viewBox="0 0 12 16" fill="#000000">
+                        <path
+                            d="M6.44 0.2C3.2 0.2 0 2.34 0 5.79C0 8 1.25 9.25 2 9.25C2.32 9.25 2.5 8.38 2.5 8.14C2.5 7.85 1.75 7.23 1.75 6.02C1.75 3.51 3.68 1.73 6.18 1.73C8.33 1.73 9.92 2.94 9.92 5.16C9.92 6.82 9.25 9.93 7.07 9.93C6.29 9.93 5.61 9.37 5.61 8.56C5.61 7.38 6.45 6.24 6.45 5.02C6.45 2.95 3.48 3.32 3.48 5.82C3.48 6.35 3.55 6.93 3.78 7.41C3.35 9.26 2.46 12.03 2.46 13.94C2.46 14.53 2.54 15.11 2.6 15.7C2.71 15.82 2.65 15.81 2.82 15.75C4.41 13.6 4.35 13.17 5.07 10.35C5.46 11.08 6.47 11.48 7.26 11.48C10.62 11.48 12.12 8.24 12.12 5.33C12.12 2.22 9.41 0.2 6.44 0.2Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="twiter">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#000000">
+                        <path
+                            d="M14.5 4.74C14.51 4.88 14.51 5.02 14.51 5.16C14.51 9.5 11.18 14.49 5.08 14.49C3.21 14.49 1.46 13.95 0 13.02C0.26 13.05 0.52 13.06 0.8 13.06C2.34 13.06 3.77 12.54 4.91 11.66C3.45 11.63 2.23 10.69 1.81 9.39C2.02 9.42 2.22 9.44 2.44 9.44C2.73 9.44 3.03 9.4 3.31 9.32C1.79 9.02 0.65 7.7 0.65 6.11L0.65 6.07C1.09 6.31 1.61 6.46 2.15 6.48C1.26 5.89 0.67 4.89 0.67 3.75C0.67 3.14 0.84 2.58 1.12 2.1C2.76 4.09 5.21 5.39 7.96 5.53C7.91 5.28 7.87 5.03 7.87 4.78C7.87 2.97 9.35 1.5 11.19 1.5C12.14 1.5 13 1.89 13.61 2.53C14.36 2.39 15.08 2.12 15.71 1.74C15.47 2.5 14.94 3.14 14.26 3.55C14.92 3.48 15.57 3.29 16.16 3.04C15.71 3.69 15.15 4.27 14.5 4.74Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./styles/myreset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/registration.css">
+</head>
+
+<body>
+    <h2 style="display: none;">Registration</h2>
+    <header class="max_conteiner">
+        <nav class="header-navi conteiner">
+            <h2 style="display: none;">Header navigation</h2>
+            <div class="header-navi__left">
+                <a href="./index.html"><img src="./img/Logo.svg" alt="Logo"></a>
+                <button><img src="./img/find.svg" alt="Find"></button>
+            </div>
+
+            <div class="header-navi__right">
+                <button class="menu" aria-label="menu"><img src="./img/burger.svg" alt="burger_menu"></button>
+                <button class="hide" aria-label="login"><img src="./img/login.svg" alt=""></button>
+                <form action="./cart.html">
+                    <button class="header-navi__cart hide" aria-label="cart">
+                        <img src="./img/basket.svg" alt="">
+                        <span class="header-navi__cart_sales">5</span>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max_conteiner">
+
+        <section class="main-top conteiner">
+            <h2 class="main-top__header">REGISTRATION</h2>
+
+            <div class="burgerMenu hidden">
+                <button class="burgerMenu__exit"><svg viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: black;
+                                    stroke: #000;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g id="cross">
+                            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                        </g>
+                    </svg>
+                </button>
+                <h3>MENU</h3>
+                <div class="burgerMenu__card">
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">MAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">T-Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">WOMAN</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">BJackets & Coatsags</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="burgerMenu__chapter" href="#">KIDS</a>
+                        <div class="burgerMenu__chapter_items">
+                            <a href="#">Accessories</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="registration-form conteiner">
+            <h2 style="display: none;">Registration form</h2>
+
+            <form id="input" action="#" method="post" class="registration-form__leftPart">
+                <div class="registration-form__conteiner">
+                    <p class="registration-form__title">Your Name</p>
+                    <div class="registration-form__input">
+                        <input type="text" autocomplete="on" class="registration-form__field" placeholder="First Name"
+                            required>
+                        <input type="text" autocomplete="on" class="registration-form__field" placeholder="Last Name"
+                            required>
+                    </div>
+                </div>
+
+                <div class="registration-form__radioInput">
+                    <input class="registration-form__radioInput_radio" type="radio" name="rb" id="Male" required>
+                    <label class="registration-form__radioInput_label" for="Male">Male</label>
+                    <input class="registration-form__radioInput_radio" type="radio" name="rb" id="Female">
+                    <label class="registration-form__radioInput_label" for="Female">Female</label>
+                </div>
+
+                <div class="registration-form__conteiner">
+                    <p class="registration-form__title">Your Name</p>
+                    <div class="registration-form__input">
+                        <input type="email" autocomplete="on" class="registration-form__field" placeholder="Email"
+                            required>
+                        <input type="password" minlength="8" autocomplete="current-password"
+                            class="registration-form__field" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <div class="registration-form__text">
+                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                        lowercase
+                        letters</p>
+                </div>
+
+                <button form="input" type="submit" class="registration-form__button">JOIN NOW<svg width="17.000977"
+                        height="9.918610" viewBox="0 0 17.001 9.91861" fill="none">
+                        <defs />
+                        <path
+                            d="M11.54 0.2C11.6 0.14 11.68 0.08 11.77 0.05C11.85 0.01 11.94 0 12.04 0C12.13 0 12.22 0.01 12.31 0.05C12.39 0.08 12.47 0.14 12.54 0.2L16.79 4.45C16.85 4.52 16.91 4.6 16.94 4.68C16.98 4.77 17 4.86 17 4.95C17 5.05 16.98 5.14 16.94 5.23C16.91 5.31 16.85 5.39 16.79 5.46L12.54 9.71C12.41 9.84 12.22 9.91 12.04 9.91C11.85 9.91 11.67 9.84 11.54 9.71C11.4 9.57 11.33 9.39 11.33 9.2C11.33 9.02 11.4 8.84 11.54 8.7L15.28 4.95L11.54 1.21C11.47 1.14 11.42 1.06 11.38 0.98C11.35 0.89 11.33 0.8 11.33 0.7C11.33 0.61 11.35 0.52 11.38 0.43C11.42 0.35 11.47 0.27 11.54 0.2Z"
+                            fill="#4A4A4A" fill-opacity="1.000000" fill-rule="evenodd" />
+                        <path
+                            d="M0 4.95C0 4.77 0.07 4.59 0.2 4.45C0.34 4.32 0.52 4.25 0.7 4.25L15.58 4.25C15.77 4.25 15.95 4.32 16.08 4.45C16.21 4.59 16.29 4.77 16.29 4.95C16.29 5.14 16.21 5.32 16.08 5.46C15.95 5.59 15.77 5.66 15.58 5.66L0.7 5.66C0.52 5.66 0.34 5.59 0.2 5.46C0.07 5.32 0 5.14 0 4.95Z"
+                            fill="#4A4A4A" fill-opacity="1.000000" fill-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+
+            <div class="registration-form__rightPart">
+                <div class="registration-form__content">
+                    <div class="registration-form__content_title">
+                        <p>LOYALTY HAS ITS PERKS</p>
+                    </div>
+                    <div class="registration-form__content_text">
+                        <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
+                            with
+                            these as soon as you join:</p>
+                    </div>
+                    <div class="registration-form__content_list">
+                        <ul>
+                            <li><svg width="20.000000" height="16.000000" viewBox="0 0 20 16" fill="none">
+                                    <defs />
+                                    <path
+                                        d="M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z"
+                                        fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>15% off welcome offer</li>
+                            <li><svg width="20.000000" height="16.000000" viewBox="0 0 20 16" fill="none">
+                                    <defs />
+                                    <path
+                                        d="M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z"
+                                        fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>Free shipping, returns and exchanges on all orders</li>
+                            <li><svg width="20.000000" height="16.000000" viewBox="0 0 20 16" fill="none">
+                                    <defs />
+                                    <path
+                                        d="M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z"
+                                        fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>$10 off a purchase on your birthda</li>
+                            <li><svg width="20.000000" height="16.000000" viewBox="0 0 20 16" fill="none">
+                                    <defs />
+                                    <path
+                                        d="M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z"
+                                        fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>Early access to products</li>
+                            <li><svg width="20.000000" height="16.000000" viewBox="0 0 20 16" fill="none">
+                                    <defs />
+                                    <path
+                                        d="M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z"
+                                        fill="#000000" fill-opacity="1.000000" fill-rule="nonzero" />
+                                </svg>Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscrube">
+            <h2 style="display: none;">Subscrube</h2>
+            <img src="./img/subscribeLayer.webp" alt="Layer">
+            <div class="subscribe_layer">
+                <div class="subscribe-content conteiner">
+                    <div class="subscribe-content__left">
+                        <img src="./img/subscribefoto.png" alt="foto">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+
+                    <div class="subscribe-content__right">
+                        <h3>SUBSCRIBE</h3>
+                        <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <form class="subscribe-form">
+                            <input type="email" class="subscribe-form_input" placeholder="Enter Your Email" required="">
+                            <button class="subscribe-form_btn">Subscribe</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max_conteiner">
+        <h1 style="display: none;">© 2022 Brand All Rights Reserved</h1>
+        <div class="footer conteiner">
+            <div>
+                <h5>© 2022 Brand All Rights Reserved.</h5>
+            </div>
+            <div class="footer_contacts">
+                <button aria-label="facebook">
+                    <svg width="8" height="16" viewBox="0 0 8 15" fill="#000000">
+                        <path
+                            d="M8.3 8.28L8.73 5.61L6.06 5.61L6.06 3.88C6.06 3.15 6.44 2.44 7.63 2.44L8.84 2.44L8.84 0.17C8.84 0.17 7.74 0 6.69 0C4.5 0 3.06 1.27 3.06 3.58L3.06 5.61L0.63 5.61L0.63 8.28L3.06 8.28L3.06 14.72L6.06 14.72L6.06 8.28L8.3 8.28Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="instagram">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="#000000">
+                        <path id="Vector"
+                            d="M7.58 4.68C5.43 4.68 3.69 6.38 3.69 8.49C3.69 10.6 5.43 12.31 7.58 12.31C9.73 12.31 11.47 10.6 11.47 8.49C11.47 6.38 9.73 4.68 7.58 4.68ZM7.58 10.97C6.19 10.97 5.05 9.86 5.05 8.49C5.05 7.12 6.18 6.01 7.58 6.01C8.97 6.01 10.11 7.12 10.11 8.49C10.11 9.86 8.97 10.97 7.58 10.97ZM12.53 4.52C12.53 5.02 12.13 5.41 11.63 5.41C11.12 5.41 10.72 5.01 10.72 4.52C10.72 4.03 11.12 3.63 11.63 3.63C12.13 3.63 12.53 4.03 12.53 4.52ZM15.11 5.42C15.05 4.23 14.77 3.18 13.88 2.31C13 1.44 11.92 1.16 10.7 1.1C9.45 1.03 5.7 1.03 4.45 1.1C3.24 1.16 2.16 1.43 1.27 2.3C0.38 3.17 0.11 4.23 0.05 5.42C-0.03 6.65 -0.03 10.33 0.05 11.56C0.1 12.75 0.38 13.81 1.27 14.68C2.16 15.55 3.23 15.82 4.45 15.88C5.7 15.95 9.45 15.95 10.7 15.88C11.92 15.82 13 15.55 13.88 14.68C14.77 13.81 15.05 12.75 15.11 11.56C15.18 10.33 15.18 6.65 15.11 5.42ZM13.49 12.88C13.23 13.53 12.71 14.03 12.05 14.29C11.05 14.68 8.68 14.59 7.58 14.59C6.48 14.59 4.1 14.68 3.11 14.29C2.44 14.03 1.93 13.53 1.67 12.88C1.27 11.9 1.36 9.57 1.36 8.49C1.36 7.41 1.27 5.08 1.67 4.11C1.93 3.45 2.44 2.95 3.11 2.69C4.11 2.3 6.48 2.39 7.58 2.39C8.68 2.39 11.05 2.31 12.05 2.69C12.71 2.95 13.22 3.45 13.49 4.11C13.89 5.09 13.79 7.41 13.79 8.49C13.79 9.57 13.89 11.9 13.49 12.88Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="printerest">
+                    <svg width="12" height="16" viewBox="0 0 12 16" fill="#000000">
+                        <path
+                            d="M6.44 0.2C3.2 0.2 0 2.34 0 5.79C0 8 1.25 9.25 2 9.25C2.32 9.25 2.5 8.38 2.5 8.14C2.5 7.85 1.75 7.23 1.75 6.02C1.75 3.51 3.68 1.73 6.18 1.73C8.33 1.73 9.92 2.94 9.92 5.16C9.92 6.82 9.25 9.93 7.07 9.93C6.29 9.93 5.61 9.37 5.61 8.56C5.61 7.38 6.45 6.24 6.45 5.02C6.45 2.95 3.48 3.32 3.48 5.82C3.48 6.35 3.55 6.93 3.78 7.41C3.35 9.26 2.46 12.03 2.46 13.94C2.46 14.53 2.54 15.11 2.6 15.7C2.71 15.82 2.65 15.81 2.82 15.75C4.41 13.6 4.35 13.17 5.07 10.35C5.46 11.08 6.47 11.48 7.26 11.48C10.62 11.48 12.12 8.24 12.12 5.33C12.12 2.22 9.41 0.2 6.44 0.2Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+                <button aria-label="twiter">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="#000000">
+                        <path
+                            d="M14.5 4.74C14.51 4.88 14.51 5.02 14.51 5.16C14.51 9.5 11.18 14.49 5.08 14.49C3.21 14.49 1.46 13.95 0 13.02C0.26 13.05 0.52 13.06 0.8 13.06C2.34 13.06 3.77 12.54 4.91 11.66C3.45 11.63 2.23 10.69 1.81 9.39C2.02 9.42 2.22 9.44 2.44 9.44C2.73 9.44 3.03 9.4 3.31 9.32C1.79 9.02 0.65 7.7 0.65 6.11L0.65 6.07C1.09 6.31 1.61 6.46 2.15 6.48C1.26 5.89 0.67 4.89 0.67 3.75C0.67 3.14 0.84 2.58 1.12 2.1C2.76 4.09 5.21 5.39 7.96 5.53C7.91 5.28 7.87 5.03 7.87 4.78C7.87 2.97 9.35 1.5 11.19 1.5C12.14 1.5 13 1.89 13.61 2.53C14.36 2.39 15.08 2.12 15.71 1.74C15.47 2.5 14.94 3.14 14.26 3.55C14.92 3.48 15.57 3.29 16.16 3.04C15.71 3.69 15.15 4.27 14.5 4.74Z"
+                            fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./script/script.js"></script>
+
+</body>
+
+</html>
