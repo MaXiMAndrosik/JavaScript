@@ -50,4 +50,7 @@ export function createProductsContent(data) {
         productDiv.appendChild(productPrice);
 
     });
+
+    let classtemp = productTable.lastChild.className;
+    productTable.lastChild.className = classtemp + ' hiden';
 }

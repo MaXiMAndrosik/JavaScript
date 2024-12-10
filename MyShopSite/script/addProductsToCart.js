@@ -1,4 +1,5 @@
 'use strict';
+import { removeProductsFromCart } from './workWithCard.js';
 
 export function addProductEvents() {
     const buttons = document.querySelectorAll('.addToCart');
@@ -13,15 +14,14 @@ export function addProductEvents() {
 // Массив обьектов продуктов добавленных в корзину -> json-формат
 let productsArray = [];
 // Получение продуктов из localStorage
-if (localStorage.getItem('products') && localStorage.getItem('products') != 'undefined') {
+if (localStorage.getItem('products') &&
+    localStorage.getItem('products') != 'undefined' &&
+    JSON.parse(localStorage.getItem('products').length != 0)) {
     // Получаем массив из localStorage и показываем количество продуктов в корзине
     productsArray = JSON.parse(localStorage.getItem('products'));
     document.querySelector('.header-navi__cart_sales').innerHTML = productsArray.length;
     document.querySelector('.header-navi__cart_sales').style.display = 'flex';
     console.log(productsArray);
-    if (productsArray.length == 0) {
-        removeProductsFromCart();
-    }
 } else {
     removeProductsFromCart();
 }
@@ -37,19 +37,6 @@ function addProductToCart(id) {
     document.querySelector('.header-navi__cart_sales').style.display = 'flex';
     localStorage.setItem('products', JSON.stringify(productsArray));
     console.log(productsArray);
-}
-
-export function addCartEvents() {
-    const clearCart = document.querySelector('.clear_cart');
-    const delProduct = document.querySelectorAll('.del_product');
-    clearCart.addEventListener('click', removeProductsFromCart);
-}
-
-function removeProductsFromCart() {
-    localStorage.clear();
-    productsArray = [];
-    document.querySelector('.header-navi__cart_sales').innerHTML = productsArray.length;
-    document.querySelector('.header-navi__cart_sales').style.display = 'none';
 }
 
 // console.log(Notification.permission);

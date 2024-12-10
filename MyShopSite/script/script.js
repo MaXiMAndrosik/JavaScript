@@ -3,8 +3,8 @@
 'use strict';
 
 import { createProductsContent } from './createProductsContent.js';
-import { addProductEvents, addCartEvents } from './moveProductsInCart.js';
-// import { removeProductFromCart } from './moveProductsToCart';
+import { addProductEvents } from './addProductsToCart.js';
+import { createCartContent } from './workWithCard.js';
 
 let url = '';
 switch (document.title) {
@@ -18,7 +18,7 @@ switch (document.title) {
     url = './script/productData.json';
     break;
   case 'Cart':
-    addCartEvents(); // Добавление событий к кнопкам "Добавить в корзину"
+    createCartContent();
     break;
 }
 
@@ -69,31 +69,3 @@ function closeOpenedDetails() {
     }
   });
 }
-
-//-----------------------------------------------------------------
-// Добавление счетчика заказов в корзину
-// Перенос значения переменной на другие страницы
-// let count = 0;
-// // const buttons = document.querySelectorAll('.addToCart');
-// const cart = document.querySelector('.header-navi__cart_sales');
-// const clearCart = document.querySelector('.clear_cart');
-// const delProduct = document.querySelectorAll('.del_product');
-// // Удаление всех продуктов из корзины // сброс счетчика товаров
-// function resetCart() {
-//   cart.style.display = 'none';
-//   count = 0;
-//   cart.innerHTML = count;
-//   localStorage.setItem('count', cart.innerHTML);
-// }
-// Удаление одного продукта из корзины // -1 к счетчику товаров
-// function delCartItem() {
-//   if (count > 1) {
-//     count--;
-//     cart.innerHTML = count;
-//     localStorage.setItem('count', cart.innerHTML);
-//   } else {
-//     resetCart();
-//   }
-// }
-//-----------------------------------------------------------------
-
