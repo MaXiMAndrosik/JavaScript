@@ -52,5 +52,5 @@ export function createProductsContent(data) {
     });
 
     let classtemp = productTable.lastChild.className;
-    productTable.lastChild.className = classtemp + ' hiden';
+    productTable.lastChild.className = classtemp + ' hidden';
 }

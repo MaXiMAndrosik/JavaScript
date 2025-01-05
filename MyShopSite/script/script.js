@@ -25,7 +25,7 @@ switch (document.title) {
 async function getData(url) {
   try {
     const response = await fetch(url);
-    const inputData = response.json();
+    const inputData = await response.json();
     return inputData;
   } catch (error) {
     console.log(error.message);
@@ -47,7 +47,7 @@ const burger = document.querySelector(".menu");
 const menuClose = document.querySelector(".burgerMenu__exit");
 
 function toogleMenu() {
-  menuActive.classList.toggle("hidden");
+  menuActive.classList.toggle("hidden-burger");
 }
 
 burger.addEventListener('click', toogleMenu);

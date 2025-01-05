@@ -247,7 +247,7 @@ details[open] summary + * {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hiden {
+  .hidden {
     display: none;
   }
   .catalog-nav {
@@ -274,7 +274,7 @@ details[open] summary + * {
   .hide {
     display: none;
   }
-  .hiden {
+  .hidden {
     display: none;
   }
   .catalog-nav {

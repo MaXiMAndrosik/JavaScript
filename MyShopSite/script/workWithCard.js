@@ -69,7 +69,7 @@ function addCartEvents() {
     });
 }
 
-export function removeProductsFromCart(productsArray) {
+export function removeProductsFromCart() {
     localStorage.clear();
     productsArray = [];
     document.querySelector('.header-navi__cart_sales').innerHTML = productsArray.length;
@@ -82,7 +82,7 @@ function removeFromCart() {
     localStorage.setItem('products', JSON.stringify(productsArrayResult));
     // console.log(productsArrayResult);
     if (productsArrayResult.length == 0) {
-        removeProductsFromCart(productsArrayResult);
+        removeProductsFromCart();
     } else {
         document.querySelector('.header-navi__cart_sales').innerHTML = productsArrayResult.length;
     }
